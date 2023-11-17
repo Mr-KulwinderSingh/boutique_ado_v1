@@ -48,6 +48,10 @@ body {
     color: white;
 }
 
+.border-rad {
+    border-radius: 5px;
+}
+
 .text-black {
     color: #000 !important;
 }
