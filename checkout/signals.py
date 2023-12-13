@@ -11,8 +11,8 @@ def update_on_save(sender, instance, created, **kwargs):
     instance.order.update_total()
 
 @receiver(post_delete, sender=OrderLineItem)
-def update_on_save(sender, instance, **kwargs):
+def update_on_delete(sender, instance, **kwargs):
     """ 
     Update order total lineitem delete 
     """
-    isinstance.order.update_total()
+    instance.order.update_total()
